@@ -1,0 +1,23 @@
+{
+  "name": "data_structure_algorithim_in_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sorting.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azmul/data_structure_algorithim_in_js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azmul/data_structure_algorithim_in_js/issues"
+  },
+  "homepage": "https://github.com/azmul/data_structure_algorithim_in_js#readme",
+  "dependencies": {
+    "eslint": "^5.2.0"
+  }
+}
