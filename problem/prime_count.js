@@ -1,25 +1,21 @@
 function isPrimitive(n) {
-  if (n <= 1)
-  {
-    return false;
-  }
-  let limit = (n / 2).toFixed();
-  for (let i = 2; i < limit; i += 1)
-  {
-    if (n % i === 0) return false;
-  }
-
-  return true;
-
+	let result = true
+	if (n <= 1) {
+		result = false
+	} else {
+		for (let i = 2; i * i <= n; i += 1) {
+			if (n % i === 0) {
+				result = false
+				break
+			}
+		}
+	}
+	return result
 }
-var countPrimes = function (n) {
-  let c = (n / 2).toFixed();
-  let result = 0;
-  for (let index = 0; index <= n; index++)
-  {
-    if (isPrimitive(index)) result += 1;
-  }
-  return result;
-};
-
-console.log(countPrimes(97))
+var countPrimes = function(n) {
+	let result = 0
+	for (let index = 0; index < n; index++) {
+		if (isPrimitive(index)) result += 1
+	}
+	return result
+}
